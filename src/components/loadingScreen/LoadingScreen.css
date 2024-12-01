@@ -1,0 +1,117 @@
+/* Loading Screen Container */
+.loading-screen-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    background-image: url("/src/assets/img/MonkeyJump Gamebg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 10;
+    padding-top: 525px;
+  }
+  
+  /* Loading Box */
+  .loading-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Loading Title */
+  .loading-title {
+    font-size: 1.5rem;
+    color: #000000;
+    padding: 0.3rem 3rem;
+    background: linear-gradient(135deg, #f8c00b, #ffee58);
+    border-radius: 50px;
+    box-shadow: 0px 10px 20px rgba(229, 37, 33, 0.5);
+    animation: bounce 1.5s infinite;
+  }
+  
+  /* Loading Bar Container */
+  .loading-bar-container {
+    width: 70%;
+    height: 20px;
+    background-color: #fe1515;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Loading Bar (Red color) */
+  .loading-bar {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fffbfb; /* Red color */
+    transition: width 0.2s ease-in-out, background 0.2s ease-in-out;
+  }
+  
+  /* Loading Details */
+  .loading-details {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  /* Loading Percentage */
+  .loading-percentage {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Play Button */
+  .enter-button {
+    font-size: 1.5rem;
+    padding: 0.3rem 3rem;
+    background: linear-gradient(135deg, #f42121, #ef0b0b);
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 10px 20px rgba(248, 192, 11, 0.5);
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .enter-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #f6b400, #ffd700);
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0px 10px 20px rgba(248, 31, 11, 0.5);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0px 15px 25px rgba(248, 192, 11, 0.7);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0px 10px 20px rgba(248, 192, 11, 0.5);
+    }
+  }
+  
